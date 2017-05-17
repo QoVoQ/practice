@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+	<style type="text/css">
+		.container {
+			position: absolute;
+			height: 1000px;
+		}
+
+		header {
+			width: 50px;
+			min-height: 100px;	/*min-height不会触发bfc margin会有collapse效果*/
+			background-color: pink;
+			/*border-bottom: 1px solid red;*/	/*border-bottom会触发bfc margin不会有collapse效果*/
+		}
+
+		.content {
+			height: 100px;
+			background-color: green;
+			border: 1px solid red;
+		}
+
+		.margin {
+			height: 80px;
+			margin: 10px;	/*这里的margin会与header产生collapse效果 其父级容器header 和 .content之间会有间隙*/
+		}
+
+		* {
+			/*border: 1px solid purple;*/
+		}
+	</style>
+</head>
+<body>
+<!-- margin隔空传递 -->
+<div class="container">
+	<header>
+		<div class="margin"></div>
+	</header>
+	<div class="content">123</div>
+	<div class="func"></div>
+</div>
+</body>
+</html>

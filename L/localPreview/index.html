@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+</head>
+<body>
+<input type="file" name="image" onchange="upload_image(this)">
+<img id="preview"></img>
+<script src="https://cdn.bootcss.com/jquery/1.12.4/jquery.min.js"></script>
+<script type="text/javascript">
+		function upload_image(file){ 
+ if (file.files && file.files[0]) {//非ie
+ var img = document.getElementById("preview");
+ var reader = new FileReader();
+ reader.onload = function(evt){img.src = evt.target.result;}
+ reader.readAsDataURL(file.files[0]);
+ }else{//兼容ie
+ var sFilter='filter:progid:DXImageTransform.Microsoft.AlphaImageLoader(sizingMethod=scale,src="';
+ file.select();
+ file.blur(); //file元素在失去焦点的时候才会执行下一句，要不然下一句会报错
+ var src = document.selection.createRange().text;
+ var imgObj = document.getElementById("preview");
+ var $img = $('#preview');
+ imgObj.filters.item("DXImageTransform.Microsoft.AlphaImageLoader").src = src;
+ $img.attr('src',sFilter + src);//把处理好的路径赋值给img的src
+ }
+ }
+</script>
+</body>
+</html>

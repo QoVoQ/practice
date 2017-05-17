@@ -1,0 +1,15 @@
+git status
+git add .
+git commit -m "XXX"
+git pull origin f_game
+
+-----
+XXXXX
+git add .
+git commit -m "merge XXX"
+----
+git push origin f_game
+
+
+git remote remove origin 
+git remote add origin 项目主页上的项目git地址

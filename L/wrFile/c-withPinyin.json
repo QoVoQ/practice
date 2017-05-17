@@ -1,0 +1,362 @@
+[
+  {
+    "cn": "产品经理",
+    "en": "Product Manager",
+    "phonetic": "chanpinjingli"
+  },
+  {
+    "cn": "软件工程师",
+    "en": "Software Engineer",
+    "phonetic": "ruanjiangongchengshi"
+  },
+  {
+    "cn": "工业设计师",
+    "en": "Industrial Designer",
+    "phonetic": "gongyeshejishi"
+  },
+  {
+    "cn": "数据库管理员",
+    "en": "Database Administrator",
+    "phonetic": "shujukuguanliyuan"
+  },
+  {
+    "cn": "产品运营",
+    "en": "Product Operations",
+    "phonetic": "chanpinyunying"
+  },
+  {
+    "cn": "高级保洁主管",
+    "en": "Senior Cleaning Supervisor",
+    "phonetic": "gaojibaojiezhuguan"
+  },
+  {
+    "cn": "茶水间主任",
+    "en": "Perennial Director",
+    "phonetic": "chashuijianzhuren"
+  },
+  {
+    "cn": "安保经理",
+    "en": "Security Manager",
+    "phonetic": "anbaojingli"
+  },
+  {
+    "cn": "安保队长",
+    "en": "Security Captain",
+    "phonetic": "anbaoduichang"
+  },
+  {
+    "cn": "程序员",
+    "en": "Programmer",
+    "phonetic": "chengxuyuan"
+  },
+  {
+    "cn": "内容运营",
+    "en": "Content Operations",
+    "phonetic": "neirongyunying"
+  },
+  {
+    "cn": "新媒体运营",
+    "en": "New Media Operations",
+    "phonetic": "xinmeitiyunying"
+  },
+  {
+    "cn": "软件开发",
+    "en": "Software Development",
+    "phonetic": "ruanjiankaifa"
+  },
+  {
+    "cn": "产品总监",
+    "en": "Product Director",
+    "phonetic": "chanpinzongjian"
+  },
+  {
+    "cn": "活动策划",
+    "en": "Event planner",
+    "phonetic": "huodongcehua"
+  },
+  {
+    "cn": "前端开发",
+    "en": "Front-end Developers.",
+    "phonetic": "qianduankaifa"
+  },
+  {
+    "cn": "HR业务伙伴",
+    "en": "HRBP",
+    "phonetic": "HRyewuhuoban"
+  },
+  {
+    "cn": "人力资源HR",
+    "en": "Human Resource Officer",
+    "phonetic": "renliziyuanHR"
+  },
+  {
+    "cn": "行政助理",
+    "en": "Administrative Assistant",
+    "phonetic": "hangzhengzhuli"
+  },
+  {
+    "cn": "总裁秘书",
+    "en": "President Secretary",
+    "phonetic": "zongcaimishu"
+  },
+  {
+    "cn": "设计总监",
+    "en": "Design Director",
+    "phonetic": "shejizongjian"
+  },
+  {
+    "cn": "平面设计师",
+    "en": "Graphic Designer",
+    "phonetic": "pingmianshejishi"
+  },
+  {
+    "cn": "设计师",
+    "en": "Designer",
+    "phonetic": "shejishi"
+  },
+  {
+    "cn": "市场推广",
+    "en": "Marketing Specialist",
+    "phonetic": "shichangtuiguang"
+  },
+  {
+    "cn": "市场总监",
+    "en": "Marketing Director",
+    "phonetic": "shichangzongjian"
+  },
+  {
+    "cn": "市场策划",
+    "en": "Marketing Specialist",
+    "phonetic": "shichangcehua"
+  },
+  {
+    "cn": "销售总监",
+    "en": "Sales Director",
+    "phonetic": "xiaoshouzongjian"
+  },
+  {
+    "cn": "总经理助理",
+    "en": "General Manager's Assistant",
+    "phonetic": "zongjinglizhuli"
+  },
+  {
+    "cn": "人力资源部经理",
+    "en": "Human Resources Manager",
+    "phonetic": "renliziyuanbujingli"
+  },
+  {
+    "cn": "行政经理",
+    "en": "Administrative Dep.Manager",
+    "phonetic": "hangzhengjingli"
+  },
+  {
+    "cn": "秘书",
+    "en": "Secretary",
+    "phonetic": "mishu"
+  },
+  {
+    "cn": "高级顾问",
+    "en": "Senior Consultant",
+    "phonetic": "gaojiguwen"
+  },
+  {
+    "cn": "销售工程师",
+    "en": "Sales Engineer",
+    "phonetic": "xiaoshougongchengshi"
+  },
+  {
+    "cn": "区域销售经理",
+    "en": "Regional Sales Manager",
+    "phonetic": "quyuxiaoshoujingli"
+  },
+  {
+    "cn": "销售部经理",
+    "en": "Sales Manager",
+    "phonetic": "xiaoshoubujingli"
+  },
+  {
+    "cn": "公关部经理",
+    "en": "Manager for Public Relations",
+    "phonetic": "gongguanbujingli"
+  },
+  {
+    "cn": "工程部经理",
+    "en": "Chief Engineer",
+    "phonetic": "gongchengbujingli"
+  },
+  {
+    "cn": "保安部经理",
+    "en": "Chief Security Officer",
+    "phonetic": "baoanbujingli"
+  },
+  {
+    "cn": "财务部经理",
+    "en": "Financial Controller",
+    "phonetic": "caiwubujingli"
+  },
+  {
+    "cn": "外汇部核算员",
+    "en": "F.X. Settlement Clerk",
+    "phonetic": "waihuibuhesuanyuan"
+  },
+  {
+    "cn": "会计",
+    "en": "Accountant",
+    "phonetic": "huiji"
+  },
+  {
+    "cn": "IT工程师",
+    "en": "IT Engineer",
+    "phonetic": "ITgongchengshi"
+  },
+  {
+    "cn": "技术服务工程师",
+    "en": "Technician Service Engineer",
+    "phonetic": "jishufuwugongchengshi"
+  },
+  {
+    "cn": "网络主管",
+    "en": "Network Manage",
+    "phonetic": "wangluozhuguan"
+  },
+  {
+    "cn": "硬件工程师",
+    "en": "Hardware Engineer",
+    "phonetic": "yingjiangongchengshi"
+  },
+  {
+    "cn": "维修工程师",
+    "en": "Maintenance Engineer",
+    "phonetic": "weixiugongchengshi"
+  },
+  {
+    "cn": "项目策划",
+    "en": "Project Staff",
+    "phonetic": "xiangmucehua"
+  },
+  {
+    "cn": "UI设计师",
+    "en": "UI Designer",
+    "phonetic": "UIshejishi"
+  },
+  {
+    "cn": "交互设计师",
+    "en": "Interaction Designer",
+    "phonetic": "jiaohushejishi"
+  },
+  {
+    "cn": "网页设计师",
+    "en": "Web Designer",
+    "phonetic": "wangyeshejishi"
+  },
+  {
+    "cn": "首席执行官",
+    "en": "CEO",
+    "phonetic": "shouxizhihangguan"
+  },
+  {
+    "cn": "首席运营官",
+    "en": "COO",
+    "phonetic": "shouxiyunyingguan"
+  },
+  {
+    "cn": "首席财务官",
+    "en": "CFO",
+    "phonetic": "shouxicaiwuguan"
+  },
+  {
+    "cn": "首席技术官",
+    "en": "CTO",
+    "phonetic": "shouxijishuguan"
+  },
+  {
+    "cn": "首席信息官",
+    "en": "CIO",
+    "phonetic": "shouxixinxiguan"
+  },
+  {
+    "cn": "创意总监",
+    "en": "Creative Director",
+    "phonetic": "chuangyizongjian"
+  },
+  {
+    "cn": "客户服务总监",
+    "en": "Account Director",
+    "phonetic": "kehufuwuzongjian"
+  },
+  {
+    "cn": "美术指导",
+    "en": "Art Director",
+    "phonetic": "meishuzhidao"
+  },
+  {
+    "cn": "司机",
+    "en": "Driver",
+    "phonetic": "siji"
+  },
+  {
+    "cn": "保洁",
+    "en": "Purifier",
+    "phonetic": "baojie"
+  },
+  {
+    "cn": "送货员",
+    "en": "Deliveryman",
+    "phonetic": "songhuoyuan"
+  },
+  {
+    "cn": "食堂大妈",
+    "en": "Canteen Worker",
+    "phonetic": "shitangdama"
+  },
+  {
+    "cn": "采购员",
+    "en": "Buyer",
+    "phonetic": "caigouyuan"
+  },
+  {
+    "cn": "电话接线员",
+    "en": "Telephonist",
+    "phonetic": "dianhuajiexianyuan"
+  },
+  {
+    "cn": "电工",
+    "en": "Electrician",
+    "phonetic": "diangong"
+  },
+  {
+    "cn": "食堂大叔",
+    "en": "Canteen Worker",
+    "phonetic": "shitangdashu"
+  },
+  {
+    "cn": "测试工程师 ",
+    "en": "Test Engineer",
+    "phonetic": "ceshigongchengshi "
+  },
+  {
+    "cn": "保洁主管",
+    "en": "cleaning supervisor",
+    "phonetic": "baojiezhuguan"
+  },
+  {
+    "cn": "法务专员",
+    "en": "legal specialist",
+    "phonetic": "fawuzhuanyuan"
+  },
+  {
+    "cn": "前台",
+    "en": "receptionist",
+    "phonetic": "qiantai"
+  },
+  {
+    "cn": "行政前台",
+    "en": "Administrative Receptionist",
+    "phonetic": "hangzhengqiantai"
+  },
+  {
+    "cn": "前台经理",
+    "en": "Front Desk Manager",
+    "phonetic": "qiantaijingli"
+  }
+]

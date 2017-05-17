@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta http-equiv="X-UA-Compatible" content="IE=EDGE" >
+	<title></title>
+</head>
+<body>
+<form method="POST" action="http://localhost:3456/file/upload" inputType="radio">
+	<fieldset>
+		<input type="text" name="name" value="Tom">
+	</fieldset>
+	<fieldset>
+		<input type="radio" name="radio" value="0" checked="checked">
+		<input type="radio" name="radio" value="1">
+	</fieldset>
+	<fieldset>
+		<input type="checkbox" name="checkbox" value="0" checked="checked">
+		<input type="checkbox" name="checkbox" value="1">
+
+		<input type="checkbox" name="scheckbox" value="1">
+	</fieldset>
+	<fieldset>
+		<input id="file1" type="file" name="file">
+		<input type="file" name="file">
+
+		<input type="file" name="sfile">
+	</fieldset>
+</form>
+<button>submit</button>
+<script src="https://cdn.bootcss.com/jquery/3.2.1/jquery.min.js"></script>
+<script type="text/javascript">
+	$.support.cors = true;
+	var form = document.querySelector('form')
+	var btn = document.querySelector('button')
+	
+
+	btn.onclick = function() {
+		// console.dir($('#file1')[0].files[0]);
+		// fd.append('avatar', $('#file1')[0].files[0]);
+		// form.submit();
+		var fd = new FormData(form);
+		fd.append('first', '1');
+		fd.append('first', '2');
+		$.ajax({
+			type: 'post',
+			url: 'http://localhost:3456/file/upload',
+			data: fd,
+			cache: false,
+			contentType: false,
+			processData: false
+		})
+		.fail(function(xhr, ts, error) {
+			alert(JSON.stringify(ts));
+			alert(JSON.stringify(error));
+		})
+		.always(function(){
+			alert('finished');
+		});
+
+	}
+
+</script>
+</body>
+</html>

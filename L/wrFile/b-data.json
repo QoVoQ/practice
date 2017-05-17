@@ -1,0 +1,80 @@
+[{
+    "_id": {
+        "$oid": "58d267d97736c2dc77e32571"
+    },
+    "buildingName": "深房大厦",
+    "location": {
+        "lng": 114.12934,
+        "lat": 22.550125
+    },
+    "province": "广东省",
+    "city": "深圳市",
+    "district": "罗湖区",
+    "street": "南极路",
+    "floorSum": 2,
+    "companySum": 2,
+    "companyIdSum": 0,
+    "floorNotNullSum": 0,
+    "floorInfos": [
+        {
+            "floor": 41,
+            "compAddrs": [
+                {
+                    "companyName": "深圳市中马创客科技有限公司",
+                    "address": "深圳市罗湖区南湖街道深房大厦A座4102"
+                }
+            ]
+        },
+        {
+            "floor": 25,
+            "compAddrs": [
+                {
+                    "companyName": "深圳市辉腾假期旅游有限公司",
+                    "address": "深圳市罗湖区南湖街道深南东路深房大厦B座25楼"
+                }
+            ]
+        }
+    ]
+},
+{
+    "_id": {
+        "$oid": "58d267d97736c2dc77e32571"
+    },
+    "buildingName": "深房大厦",
+    "location": {
+        "lng": 114.12934,
+        "lat": 22.550125
+    },
+    "province": "广东省",
+    "city": "深圳市",
+    "district": "罗湖区",
+    "street": "南极路",
+    "floorSum": 2,
+    "companySum": 2,
+    "companyIdSum": 0,
+    "floorNotNullSum": 0,
+    "floorInfos": [
+        {
+            "floor": 41,
+            "compAddrs": [
+                {
+                    "companyName": "深圳市中马创客科技有限公司",
+                    "address": "深圳市罗湖区南湖街道深房大厦A座4102"
+                }
+            ]
+        },
+        {
+            "floor": 25,
+            "compAddrs": [
+                {
+                    "companyName": "深圳市辉腾假期旅游有限公司",
+                    "address": "深圳市罗湖区南湖街道深南东路深房大厦B座25楼"
+                },
+                {
+                    "companyName": "深圳市中马创客科技有限公司",
+                    "address": "深圳市罗湖区南湖街道深房大厦A座4102"
+                }
+            ]
+        }
+    ]
+}]
