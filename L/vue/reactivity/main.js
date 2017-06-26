@@ -1,18 +1,28 @@
-function watchSth(target, exp) {
-	var watcherCb = (newVal, oldVal) => { console.log('got sth change from', oldVal, '---', newVal); }
-	observe(target);
-	var wathcer = new Watcher(target, exp, watcherCb);
+function SelfVue(opt) {
+	var self = this;
+	self.data = opt.data;
+
+	Object.keys(opt.data).forEach(key => self._proxyKey(self, key));
+
+	observe(opt.data);
+
+	new Compiler(opt.el, self);
 }
 
-var info = {
-	data: {
-		name: 'Tom',
-		age: 123
+SelfVue.prototype = Object.assign(
+	SelfVue.prototype,
+	{
+		_proxyKey(vm, key) {
+			Object.defineProperty(vm, key, {
+				enumerable: false,
+				configurable: true,
+				get() {
+					return vm.data[key];
+				},
+				set(val) {
+					vm.data[key] = val;
+				}
+			});
+		}
 	}
-};
-
-watchSth(info, 'age');
-
-setInterval(() => {
-	info.data.age++;
-}, 1000);
+);
