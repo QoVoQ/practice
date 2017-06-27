@@ -1,36 +1,64 @@
 <!DOCTYPE html>
 <html>
+<meta charset="utf-8">
 <head>
-	<title>CSS Trick</title>
+    <title>CSS Trick</title>
+    <link rel="stylesheet" href="https://unpkg.com/sakura.css/css/sakura.css">
+    </style>
 </head>
 <style type="text/css">
-	.border-black {
-		border: 1px solid black;
-	}
+body {
+	font-family: "微软雅黑";
+}
+.border-rp {
+    border: 1px solid rebeccapurple;
+}
+.w100 {
+	width: 100px;
+}
+.w300 {
+	width: 300px;
+}
+.h100 {
+	height: 100px;
+}
+.h200 {
+	height: 200px;
+}
+.mb100 {
+	margin-bottom: 100px;
+}
+.bg-pink {
+	background-color: pink;
+}
+.bg-teal {
+	background-color: teal
+}
 </style>
-<body>
-<div class="section">
-<h2>inline block justify</h2>
-<style type="text/css">
-	.inline-block-justify {
-  text-align: justify;
-  font-size: 0!important;
-}
 
-.inline-block-justify > *,
-.inline-block-justify:after {
-  display: inline-block;
-  vertical-align: middle;
-  font-size: 14px;
-}
-
-.inline-block-justify:after {
-  content: '';
-  width: 100%;
-  height: 0;
-}
-</style>
-<pre>
+<body class="mb100">
+    <div class="section">
+        <h2>inline block justify</h2>
+        <style type="text/css">
+        .inline-block-justify {
+            text-align: justify;
+            font-size: 0!important;
+        }
+        
+        .inline-block-justify > *,
+        .inline-block-justify:after {
+            display: inline-block;
+            vertical-align: middle;
+            font-size: 14px;
+        }
+        
+        .inline-block-justify:after {
+            content: '';
+            width: 100%;
+            height: 0;
+        }
+        </style>
+        <pre>
 .inline-block-justify {
   text-align: justify;
   font-size: 0!important;
@@ -44,16 +72,119 @@
 }
 
 .inline-block-justify:after {
-  content: '';
+	content: '';
   width: 100%;
   height: 0;
 }
-</pre>
-<div class="inline-block-justify border-black">
-	<span>dfasdflkjl</span>
-	<span>465df对方身份</span>
-	<span>465df对方身份</span>
-</div>	
-</div>
+				</pre>
+				<h5>DEMO</h5>
+        <div class="inline-block-justify border-rp">
+            <span>dfasdflkjl</span>
+            <span>465df对方身份</span>
+            <span>465df对方身份</span>
+        </div>
+        <hr>
+    </div>
+    <div class="section">
+        <h2><a href="http://hackingui.com/front-end/a-pure-css-solution-for-multiline-text-truncation/" target="_blank">multiple line ellipsis</a></h2>
+        <style type="text/css">
+        .mul-ellipsis {
+            overflow: hidden;
+            position: relative;
+            line-height: 1.5em;
+            /* variable line-height*/
+            max-height: 3em;
+            /* variable line-height */
+            text-align: justify;
+            margin-right: -1em;
+            padding-right: 1em;
+        }
+        
+        .mul-ellipsis:before {
+            content: '...';
+            position: absolute;
+            right: 0;
+            bottom: 0;
+        }
+        
+        .mul-ellipsis:after {
+            content: '';
+            position: absolute;
+            right: 0;
+            width: 1em;
+            height: 1.5em;
+            /* variable line-height*/
+            /*margin-top: 0.2em; !* variable line-height*!*/
+            background-color: white; /*  bg-color should be the same the container's  */
+        }
+        </style>
+        <pre>
+.mul-ellipsis {
+  overflow: hidden;
+  position: relative;
+  line-height: 1.5em; /* variable line-height*/
+  max-height: 3em; /* variable line-height */
+  text-align: justify;
+  margin-right: -1em;
+  padding-right: 1em;
+}
+
+.mul-ellipsis:before {
+  content: '...';
+  position: absolute;
+  right: 0;
+  bottom: 0;
+}
+
+.mul-ellipsis:after {
+  content: '';
+  position: absolute;
+  right: 0;
+  width: 1em;
+  height: 1.5em; /* variable line-height*/
+  /*margin-top: 0.2em; !* variable line-height*!*/
+  background-color: white; /*  bg-color should be the same the container's  */
+}
+        </pre>
+        <h5>DEMO</h5>
+        <style type="text/css">
+        	.mul-ellipsis-demo {
+        		letter-spacing: normal;
+        	}
+        </style>
+        <div class="mul-ellipsis mul-ellipsis-demo border-rp w100">
+        	发生的发生的浪费空间暗示；但浪费静安寺了；款到发书；大姐夫；啊束带结发；啊手机都快疯了；奥丝蓝黛；放假啊是；老地方
+        </div>
+        <div class="mul-ellipsis mul-ellipsis-demo border-rp w300">
+        	发生的发生的浪费空间暗示；但浪费静
+        </div>
+        <hr>
+    </div>
+    <div class="section">
+    	<h2><a href="http://chuckliu.me/#!/posts/58b66a1b820ad92fbbe9a4e1" target="_blank">two column responsive</a></h2>
+    	<h4>principle: BFC</h4>
+    	<style type="text/css">
+    		.fix-side {
+    			float: left;
+    		}
+    		.responsive-side {
+    			overflow: hidden;	/* trigger BFC */
+    		}
+    	</style>
+    	<pre>
+.fix-side {
+	float: left;
+}
+.responsive-side {
+	overflow: hidden;	/* trigger BFC */
+}
+    	</pre>
+    	<h5>DEMO</h5>
+    	<div class="demo-ctn">
+    		<div class="fix-side w100 bg-teal h100">.fix-side</div>
+    		<div class="responsive-side bg-pink h200">.responsive-side</div>
+    	</div>
+    </div>
 </body>
+
 </html>
