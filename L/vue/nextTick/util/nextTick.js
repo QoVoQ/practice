@@ -21,23 +21,24 @@ const nextTick = (
 
     // define asyncFunc
     // mutation observer can alse be used
-    if(typeof Promise !== undefined) {
+    if (typeof Promise !== undefined) {
       const logError = e => console.error(e);
-      asyncFunc = () => Promise.resolve().then(nextTickHandler).catch(logError);
+      asyncFunc = () => Promise.resolve().then(nextTickHandler).catch(
+        logError);
     } else {
       asyncFunc = () => setTimeout(nextTickHandler, 0);
     }
 
     // function that is actually exposed
     return function queueNextTick(func, ctx) {
-      var tmp = ctx
-        ? func.bind(ctx)
-        : func;
+      var tmp = ctx ? func.bind(ctx) : func;
 
       callbacks.push(tmp);
 
-      // 如果在当前task已经调用过asycFunc,则直接退出
-      if (pending) { return; }
+      // 如果pending为true, 就其实表明本轮事件循环中已经执行过asyncFunc
+      if (pending) {
+        return;
+      }
       pending = true;
       asyncFunc();
     }
