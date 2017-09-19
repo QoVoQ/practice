@@ -3,15 +3,16 @@
 
 	<head>
 		<meta charset="utf-8">
-		<title>reactivity</title>
+		<title>nextTick</title>
 	</head>
 
 	<body>
 		<div id="app">
 			<h1 id="H1">{{ counter }}</h1>
-			<h2>{{ name }}</h2>
 		</div>
 		<script src="./dep.js"></script>
+		<script src="./util/nextTick.js"></script>
+		<script src="./scheduler.js"></script>
 		<script src="./watcher.js"></script>
 		<script src="./observer.js"></script>
 		<script src="./compiler.js"></script>
@@ -35,14 +36,16 @@
 		setInterval(() => { //	修改数据，视图自动更新
 			console.log('--- marcotask begin -----');
 			console.log('text in h1 before mutation: ', $H.innerText);
-			info.counter++;
-			info.counter++;
-			info.counter++;
-			info.counter++;
+			vm.counter++;
+			vm.counter++;
+			vm.counter++;
+			vm.counter++;
 			console.log('text in h1 after mutation: ', $H.innerText);
+			nextTick(function() {
+				console.log('nextTick test --- text in h1', $H.innerText)
+			}, vm);
 			console.log('--- marcotask end -----');
-			// (info.counter % 2 === 0) && (info.name = fakeUID());
-		}, 1000);
+		}, 3000);
 
 		</script>
 	</body>

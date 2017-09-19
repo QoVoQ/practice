@@ -3,13 +3,14 @@
 
 	<head>
 		<meta charset="utf-8">
-		<title>reactivity</title>
+		<title>computed</title>
 	</head>
 
 	<body>
 		<div id="app">
-			<h1 id="H1">{{ counter }}</h1>
+			<h1>{{ counter }}</h1>
 			<h2>{{ name }}</h2>
+			<p>{{ cp }}</p>
 		</div>
 		<script src="./dep.js"></script>
 		<script src="./watcher.js"></script>
@@ -27,22 +28,20 @@
 
 		var vm = new SelfVue({
 			el: '#app',
-			data: info
+			data: info,
+			computed: {
+				cp() {
+					return this.name + '---';
+				}
+			}
 		});
 
-		var $H = document.querySelector('#H1');
-
 		setInterval(() => { //	修改数据，视图自动更新
-			console.log('--- marcotask begin -----');
-			console.log('text in h1 before mutation: ', $H.innerText);
 			info.counter++;
-			info.counter++;
-			info.counter++;
-			info.counter++;
-			console.log('text in h1 after mutation: ', $H.innerText);
-			console.log('--- marcotask end -----');
-			// (info.counter % 2 === 0) && (info.name = fakeUID());
+			(info.counter % 2 === 0) && (info.name = fakeUID());
+			// console.log(vm.cp);
 		}, 1000);
+		console.log(watcherAll);
 
 		</script>
 	</body>

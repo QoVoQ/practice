@@ -31,7 +31,6 @@ Compiler.prototype = Object.assign(
       var initText = this.vm[exp];
       this.updateText(node, initText); // 将初始化的数据初始化到视图中
       new Watcher(this.vm, exp, function(value) { // 生成订阅器并绑定更新函数
-        debugger;
         self.updateText(node, value);
         console.log('updateText', node.textContent);
       });
