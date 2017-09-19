@@ -13,7 +13,7 @@ function queueWatcher(watcher) {
   if (scheHasMap[id]) {
     return;
   }
-
+  scheHasMap[id] = true;
   scheQueue.push(watcher);
 
   // function queueWatcher only execute once in every event loop
