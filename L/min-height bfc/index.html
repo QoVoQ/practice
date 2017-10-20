@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html>
+
+  <head>
+    <meta charset="utf-8">
+    <title>min-height & bfc</title>
+    <style media="screen">
+    .box {
+      height: 100px;
+      overflow-y: auto;
+      border: 1px solid pink;
+    }
+
+    .inner {
+      min-height: 100%;
+      /*trigger bfc */
+      overflow: auto;
+    }
+
+    .list {
+      height: 10px;
+      margin-top: 10px;
+      background-color: red;
+    }
+
+    </style>
+  </head>
+
+  <body>
+    <div class="box">
+      <div class="inner">
+        <div class="list">
+
+        </div>
+      </div>
+    </div>
+  </body>
+
+</html>

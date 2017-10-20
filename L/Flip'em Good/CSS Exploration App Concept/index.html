@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html>
+
+  <head>
+    <meta charset="utf-8">
+    <title>CSS Exploration App Concept</title>
+    <link rel="stylesheet" href="index.css">
+    <!-- https://codepen.io/davidkpiano/pen/NGYjZv -->
+  </head>
+
+  <body>
+    <div class="route" id="golden-explore-details"></div>
+    <div class="route" id="golden-explore-gallery"></div>
+    <div class="route" id="alamo-explore-details"></div>
+    <div id="explore">
+      <header class="exp-header">
+        <span>Top Attractions</span>
+        <div class="exp-menu"></div>
+      </header>
+      <main class="exp-main">
+        <div class="exp-location" data-location="alamo">
+          <div class="exp-image">
+            <img src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/181794/Screen_Shot_2015-10-25_at_10.51.48_PM.png" alt="" />
+          </div>
+          <div class="exp-details">
+            <a href="#alamo-explore-details" class="exp-card -title">
+              <h1 class="heading -h1">Alamo Square</h1>
+              <div class="subheading">San Francisco, CA</div>
+            </a>
+            <div class="exp-card -info">
+              <h1 class="heading -h2">1984</h1>
+              <div class="subheading">Created</div>
+              <h1 class="heading -h2">5,617</h1>
+              <div class="subheading">Population</div>
+            </div>
+          </div>
+          <div class="exp-facts">
+            <div class="heading">Facts</div>
+            <p class="paragraph">The Alamo Square neighborhood is characterized by Victorian architecture that was left largely untouched by the urban renewal projects in other parts of the Western Addition.</p>
+            <div class="exp-dots">
+              <div class="exp-dot -active"></div>
+              <div class="exp-dot"></div>
+              <div class="exp-dot"></div>
+            </div>
+          </div>
+        </div>
+        <div class="exp-location" data-location="golden">
+          <a href="#golden-explore-gallery" class="exp-image">
+        <img src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/181794/Screen_Shot_2015-10-25_at_4.26.33_PM.png" alt="" />
+      </a>
+          <div class="exp-details">
+            <a href="#golden-explore-details" class="exp-card -title">
+              <h1 class="heading -h1">Golden Gate</h1>
+              <div class="subheading">San Francisco, CA</div>
+            </a>
+            <div class="exp-card -info">
+              <h1 class="heading -h2">1937</h1>
+              <div class="subheading">Opened</div>
+              <h1 class="heading -h2">8,980'</h1>
+              <div class="subheading">Total Length</div>
+            </div>
+          </div>
+          <div class="exp-facts">
+            <div class="heading">Facts</div>
+            <p class="paragraph">Business was so good, the city constructed the Oakland Bay Bridge and the Golden Gate Bridge during the Great Depression.</p>
+            <div class="exp-dots">
+              <div class="exp-dot -active"></div>
+              <div class="exp-dot"></div>
+              <div class="exp-dot"></div>
+            </div>
+          </div>
+          <div class="exp-gallery">
+            <img src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/181794/Screen_Shot_2015-10-25_at_10.03.34_PM.png" alt="" class="-active" />
+            <img src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/181794/Screen_Shot_2015-10-25_at_10.04.25_PM.png" alt="" />
+            <img src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/181794/Screen_Shot_2015-10-25_at_10.05.30_PM.png" alt="" />
+            <img src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/181794/Screen_Shot_2015-10-25_at_10.04.00_PM.png" alt="" />
+          </div>
+        </div>
+      </main>
+      <footer class="exp-footer">
+        <div>All Cities</div>
+        <div class="exp-dots">
+          <div class="exp-dot -active"></div>
+          <div class="exp-dot"></div>
+          <div class="exp-dot"></div>
+        </div>
+        <div>Next</div>
+      </footer>
+    </div>
+    <div class="meta">
+      <h1>CSS-only Exploration App Concept</h1>
+      <p>
+        Dribbble Rework<br /> Original Shot by <a href="https://dribbble.com/shots/2311820-Exploring" target="_blank">Dejan Markovic</a>
+      </p>
+      <p>
+        Click the pulsating tiles and photo to see the effect.<br> You can also go <strong>back</strong> in your browser to navigate between scenes.
+      </p>
+      <p>
+        Works best in Chrome and Safari. Works <em>okay</em> in Firefox. <br> It also works on mobile devices.
+      </p>
+    </div>
+  </body>
+
+</html>

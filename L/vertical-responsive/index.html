@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html>
+
+  <head>
+    <meta charset="utf-8">
+    <title>vertical responsive</title>
+    <style media="screen">
+    html,
+    body {
+      height: 100%;
+    }
+
+    .ctn {
+      display: flex;
+      flex-direction: column;
+      border: 5px solid navy;
+      height: 100%;
+    }
+
+    .upper {
+      /*height: 100%;*/
+      flex-shrink: 0;
+      background-color: pink;
+    }
+
+    .upper .inner {
+      height: 100px;
+      resize: both;
+      background-color: yellow;
+    }
+
+    .down {
+      position: relative;
+      height: 100%;
+      border: 5px solid purple;
+      overflow: hidden;
+    }
+
+    .inner {
+      height: 1000px;
+      background-color: teal;
+    }
+
+    .mask {
+      position: absolute;
+      top: 0;
+      bottom: 0;
+      width: 100%;
+      color: white;
+      background-color: white;
+      opacity: .5;
+    }
+
+    .scroll {
+      height: 100%;
+      overflow: auto;
+    }
+
+    </style>
+  </head>
+
+  <body>
+    <div class="ctn">
+      <div class="upper">
+        <div class="inner">
+
+        </div>
+      </div>
+      <div class="down">
+        <div class="mask">
+          Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor
+          in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+        </div>
+        <div class="scroll">
+          <div class="inner">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute
+            irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</div>
+        </div>
+      </div>
+    </div>
+  </body>
+
+</html>

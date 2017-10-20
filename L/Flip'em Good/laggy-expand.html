@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html>
+
+  <head>
+    <meta charset="utf-8">
+    <title>laggy-expand</title>
+    <style media="screen">
+    * {
+      margin: 0;
+    }
+
+    .element {
+      background-color: navy;
+      box-shadow: -4px 4px 4px rgba(155, 155, 155, 0.07);
+      height: 90px;
+      position: absolute;
+      transition: top 200ms ease-in 50ms, height 200ms ease-in;
+      width: 100%;
+    }
+
+    .element.expanded {
+      height: 100%;
+      left: 0;
+      position: absolute;
+      transition: top 200ms ease-in, height 200ms ease-in 50ms;
+      top: 0;
+      width: 100%;
+      z-index: 3;
+    }
+
+    </style>
+  </head>
+
+  <body>
+    <div class="element">
+
+    </div>
+
+    <div class="element">
+      <div class="">
+
+      </div>
+    </div>
+    <script src="https://code.jquery.com/jquery-3.2.1.min.js" integrity="sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4=" crossorigin="anonymous"></script>
+    <script type="text/javascript">
+    const eles = $('.element');
+
+    eles.on('click', function() {
+      $(this).toggleClass('expanded');
+    });
+
+    function getBounding() {
+      var collapsed = eles[0].getBoundingClientRect();
+      console.log(collapsed);
+    }
+
+    getBounding();
+
+    </script>
+  </body>
+
+</html>
