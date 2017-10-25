@@ -6,11 +6,21 @@
     <title>slide and expand</title>
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="stylesheet" href="index.css">
+    <style media="screen">
+    .item.to-click {
+      transition: height .3s;
+    }
+
+    .item.active {
+      height: 350px;
+    }
+
+    </style>
   </head>
 
   <body>
     <div class="list">
-      <div class="item first">
+      <div class="item">
         <div class="title">First</div>
         <div class="content">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Perferendis natus consectetur nisi rem saepe optio suscipit obcaecati magnam soluta ex dolore quisquam exercitationem quibusdam, deleniti, temporibus debitis, ab at, earum.</div>
       </div>
@@ -36,10 +46,20 @@
         <div class="content">Officiis beatae temporibus eos accusantium error repellat, alias aut quis voluptates modi quisquam! Praesentium quis fugit modi ullam, inventore quam suscipit, aut illo distinctio corrupti. Aperiam architecto consequuntur odit nobis.</div>
       </div>
     </div>
+    <script type="text/javascript">
+    const changingItem = document.querySelector('.item.to-click');
+    const body = document.querySelector('body');
 
-    <script src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/61811/web-animations-next-2.2.0.min.js"></script>
-    <script src="index.js">
+    changingItem.addEventListener('click', (e) => {
+      // e.preventDefault();
+      e.stopImmediatePropagation();
 
+      changingItem.classList.add('active');
+    });
+
+    body.addEventListener('click', () => {
+      changingItem.classList.remove('active');
+    })
 
     </script>
   </body>
