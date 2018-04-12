@@ -230,6 +230,149 @@
         </div>
       </div>
     </div>
+    <div class="section">
+      <h2>CSS Following Menu -- version transform</h2>
+      <h4>usage of selector `~`</h4>
+      <style type="text/css">
+
+    .css-following-menu-item {
+      display: inline-block;
+      position: relative;
+      font-size: 20px;
+    }
+
+    .css-following-menu-item:before {
+      content: '';
+      position: absolute;
+      bottom: 0;
+      /* left: 100%; */
+      width: 100%;
+      transform: translateX(100%) scaleX(0);
+      transform-origin: left;
+      border-bottom: 3px solid black;
+      transition: all .3s;
+    }
+
+    .css-following-menu-item:hover::before {
+      /* left: 0;
+      width: 100%; */
+      transform: translateX(0) scaleX(1);
+    }
+
+    .css-following-menu-item:hover ~ .css-following-menu-item:before {
+      /* left: -100%; */
+      transform: translateX(0) scaleX(0);
+    }
+
+
+      </style>
+      <pre>
+
+.css-following-menu-item {
+  display: inline-block;
+  position: relative;
+  font-size: 20px;
+}
+
+.css-following-menu-item:before {
+  content: '';
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+  transform: translateX(100%) scaleX(0);
+  transform-origin: left;
+  border-bottom: 3px solid black;
+  transition: all .3s;
+}
+
+.css-following-menu-item:hover::before {
+  transform: translateX(0) scaleX(1);
+}
+
+.css-following-menu-item:hover ~ .css-following-menu-item:before {
+  transform: translateX(0) scaleX(0);
+}
+      </pre>
+      <h5>DEMO</h5>
+      <div class="demo-ctn">
+          <div class="css-following-menu">
+            <p class="css-following-menu-item">首页</p>
+            <p class="css-following-menu-item">个人中心啊</p>
+            <p class="css-following-menu-item">关于我们</p>
+            <p class="css-following-menu-item">购物车</p>
+          </div>
+      </div>
+    </div>
+
+    <div class="section">
+      <h2>CSS Following Menu -- version width</h2>
+      <h4>usage of selector `~`</h4>
+      <style type="text/css">
+    .css-following-menu-item--noraml {
+      display: inline-block;
+      position: relative;
+      font-size: 20px;
+    }
+
+    .css-following-menu-item--noraml:before {
+      content: '';
+      position: absolute;
+      bottom: 0;
+      left: 100%;
+      width: 0;
+      border-bottom: 3px solid black;
+      transition: all .3s;
+    }
+
+    .css-following-menu-item--noraml:hover::before {
+      left: 0;
+      width: 100%;
+    }
+
+    .css-following-menu-item--noraml:hover ~ .css-following-menu-item--noraml:before {
+      left: 0;
+    }
+
+
+      </style>
+      <pre>
+.css-following-menu-item--noraml {
+  display: inline-block;
+  position: relative;
+  font-size: 20px;
+}
+
+.css-following-menu-item--noraml:before {
+  content: '';
+  position: absolute;
+  bottom: 0;
+  left: 100%;
+  width: 0;
+  border-bottom: 3px solid black;
+  transition: all .3s;
+}
+
+.css-following-menu-item--noraml:hover::before {
+  left: 0;
+  width: 100%;
+}
+
+.css-following-menu-item--noraml:hover ~ .css-following-menu-item--noraml:before {
+  left: 0;
+}
+      </pre>
+      <h5>DEMO</h5>
+      <div class="demo-ctn">
+
+        <div class="css-following-menu--noraml">
+          <p class="css-following-menu-item--noraml">首页</p>
+          <p class="css-following-menu-item--noraml">个人中心啊</p>
+          <p class="css-following-menu-item--noraml">关于我们</p>
+          <p class="css-following-menu-item--noraml">购物车</p>
+        </div>
+
+      </div>
+    </div>
   </body>
 
 </html>
